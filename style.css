@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     outline: none;
-    background-color: rgb(241, 240, 239);
+    background-color: #ecf0f3;
 }
 
 .container{
@@ -15,9 +15,55 @@
 }
 
 .Calculator{
-    background-color: rgb(215, 209, 201);
+    background-color: #f2f6f7;
     color: black;
     padding: 10px;
     border-radius: 25px;
-    box-shadow: 5px 5px 12px rgb(215, 209, 201);
+    box-shadow: inset 15px 15px 15px #ffffff,
+                      15px 15px 15px rgba(0,0,0,.18);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+
+}
+
+input{
+    background-color: #f2f6f7;
+    grid-column: span 4;
+    height: 55px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 40px;
+    text-align: end;
+    padding: 10px;
+    color: rgb(37, 25, 11);
+    box-shadow: inset -10px -10px 15px #ffffff,
+                    10px 10px 15px rgba(0,0,0,.18);
+    border-style: none;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
+    border-style: none;
+    box-shadow: inset -5px -5px 15px #ffffff,
+                    5px 5px 15px rgba(0,0,0,.15);
+}
+
+.equal{
+    height: 50px;
+    width: 125px;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 30px;
+    margin: 10px;
+    border-style: none;
+    box-shadow: inset -5px -5px 15px #ffffff,
+                    5px 5px 15px rgba(0,0,0,.15);
 }
